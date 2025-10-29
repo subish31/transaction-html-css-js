@@ -1,0 +1,30 @@
+.lbl{
+    color:rgb(64, 204, 157);
+    font-weight:bold
+}
+.bttn{
+    background-color: rgb(64, 204, 157);
+    color:white;
+}
+.btn:hover{
+    background-color: white;
+    color:black;
+}
+.headd{
+    background-color:  rgb(223, 222, 222);
+}
+h1{
+    color:rgb(94, 90, 90);
+}
+#output{
+    background-color: rgb(64, 204, 157);
+    color:white;
+}
+#toggle,#toggle1{
+    background-color: rgb(64, 204, 157);
+    color:white;
+    border:0px;
+    border-radius:5px;
+    padding:5px;
+    margin-top:5px;
+}
