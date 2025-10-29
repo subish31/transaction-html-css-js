@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container mt-5 border rounded ">
+            <div class="row  mb-4  headd">
+                <div class="col-12 p-2 text-center">
+                    <h1>Create Account</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="fname" class="mt-2 lbl">First name*</label><br>
+                    <input type="text" id="fname" name="fname" class="border rounded form-control" required>
+                    <div id="fir"></div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lname" class="lbl mt-2 lbl">Last name*</label><br>
+                    <input type="text" id="lname" name="lname" class="border rounded form-control ">
+                    <div id="las"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="eid" class="mt-1 lbl lbl">Email*</label><br>
+                    <input type="email" id="eid" name="email" class="border rounded form-control mt-1 mb-1" required>
+                    <div id="ema"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="pwd" class="lbl mt-1 lbl">Password*</label><br>
+                    <input type="password" id="pwd" name="passwd" class="border rounded form-control " required>
+                    <button type="button" id="toggle">Show</button>
+                    <div id="pass"></div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="cpwd" class="lbl mt-1"> Confirm Password*</label><br>
+                    <input type="password" id="cpwd" name="conpasswd" class="border rounded form-control" required>
+                    <button type="button" id="toggle1">Show</button>
+                    <div id="cpass"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="mt-3 lbl" >Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male" class="me-1" >
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" class="ms-2 me-2" ><label for="female">Female</label>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <p class="mt-3 lbl">Hobbies</p>
+                    <input type="checkbox" id="music" name="hobb" value="music" class="mx-2">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="sports" name="hobb" value="sports" class="mx-2">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="travel" name="hobb" value="travel" class="mx-2">
+                    <label for="travel">Travel</label>
+                    <input type="checkbox" id="movies" name="hobb" value="movies" class="mx-2">
+                    <label for="movies">Movies</label>
+                    <div id="hobi"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" >
+                    <label for="src" class="mt-3 lbl">Source of Income</label><br>
+                    <select id="src" name="src" class="mt-1 form-control">
+                        <option value="employed" selected>Employed </option>
+                        <option value="Business" >Business</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <label for="inc" class="mt-3 mb-2 lbl">Income</label><br>
+                    <input type="range" id="inc" name="inc" min="10" max="100"  oninput="output.value=inc.value +'K' " class="form-range"> 
+                    <output id="output" class=" py-1 px-2 border rounded ">20k</output>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="upl" class="mt-3 mb-2 lbl">Upload Profile Picture</label><br>
+                    <input type="file" id="upl" name="fil" class="form-control" accept="pdf">
+                    <div id="file"></div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="ag" class="mt-3 mb-2 lbl">
+                        Age
+                    </label><br>
+                    <input type="number" id="ag" name="age"  class="form-control p-1">
+                    <div id="agge"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="bio" class="mt-3 mb-2 lbl"> Bio</label><br>
+                    <textarea id="bio" class="form-control mb-3"></textarea>
+                    <div id="bioo"></div>
+                </div>
+            </div>
+            <div class="row bg-secondary ">
+                <div class="col-12 p-3 text-end headd">
+                    <button type="button" class="btn bttn p border-0 rounded" onclick="validate()">Create</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>  
